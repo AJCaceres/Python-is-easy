@@ -47,6 +47,15 @@ def Guess(key, value):
 				return True
 				break
 	else:
-		return false
-
-Guess(Key,Value)
+		return False
+try:
+	Guess(Key,Value)
+except Exception as e:
+	print(str(e))
+finally:
+	Key2=Key.lower()
+	print(Key2)
+	Value2= Value.lower()
+	Value2 = Value.capitalize()
+	print(Value2)
+	Guess(Key2,Value2)
